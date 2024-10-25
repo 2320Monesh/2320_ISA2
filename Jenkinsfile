@@ -2,12 +2,6 @@ pipeline {
     agent any // Use any available agent
 
     stages {
-        stage('Clone Repository') {
-            steps {
-                git 'https://github.com/2320Monesh/2320_ISA2.git'
-            }
-        }
-
         stage('Build Docker Image') {
             steps {
                 script {
